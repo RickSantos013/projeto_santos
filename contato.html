@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<html lang = "pt-BR">					<!--define o idioma da página-->
+	<head>
+		<meta charset = "UTF - 8">			<!--add o dicionário dos acentos-->				
+		<title>Contato - Santos FC</title>   	<!--título da aba do navegador-->			
+		<link rel = "stylesheet" href = "reset.css">		<!--endereço CSS-->
+		<link rel = "stylesheet" href = "style.css">	<!--remove as formatações que o navegador automaticamente faz-->	
+	</head>	
+ <body>
+	<header>					<!--cabeçalho-->
+		  <div class="caixa">												
+			<h1><img id = "logo" src = "santos.png" alt="Logo do Santos Futebol Clube"></h1> 					
+		 	 <nav>															
+				<ul>														
+					<li><a href = "index.html">Home</a></li> 				
+					<li><a href = "produtos.html">Store</a></li>
+					<li><a href = "contato.html">Contato</a></li>
+				</ul>
+			 </nav>
+	 	  </div>		
+	</header>
+  <main>				<!--corpo da página-->
+		<form>															<!--acrescentar um formulário na pág-->
+			<label for = "nomesobrenome" class="padrao">Nome completo</label>			<!--label e input, andam "juntas"-->
+			<input type = "text" id = "nomesobrenome" class="input-padrao" required>
+				<!--required -> torna o campo obrigatório-->
+
+			<label for = "email" class="padrao1">Email</label>		<!--Texto-->
+			<input type = "email" id = "email" class="input-padrao" required placeholder="seuemail@dominio.com">
+				<!--placeholder -> texto de exemplo-->
+
+			<label for = "telefone" class="padrao2">Telefone</label>
+			<input type = "tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+			<label for = "mensagem" class="padrao3">Mensagem</label>					 		<!--textarea = caixa de mensagem -->
+			<textarea cols="70" rows ="10" id = "mensagem" class="input-padrao" required></textarea>  
+				<!--cols (colunas) rows(linhas)-->
+
+		<fieldset>										<!--agrupar elementos relacionados dentro de um formulário-->
+			<legend>Como prefere nosso contato?</legend> <!--legend -> título dentro do fieldset-->
+
+			<label for="radio-email"><input type = "radio" name = "contato" value="email" id="radio-email" checked>Email</label>
+				<!--radio(button) = bolinha para selecionar algo-->
+
+			<label for="radio-telefone"><input type = "radio" name = "contato" value="telefone" id="radio-telefone">Telefone</label>
+			
+
+			<label for="radio-whatsapp"><input type = "radio" name = "contato" value = "whatsapp" id = "radio-whatsapp">WhatsApp</label>			
+		</fieldset>
+   
+	<fieldset>	
+		<legend id = "teste">Qual horário prefere ser atendido?</legend>
+		<select>		<!--caixa de seleção -->
+			<option>Manhã</option>		<!--as opções de texto, na caixa de seleção-->
+			<option>Tarde</option>
+			<option>Noite</option>
+		</select>
+	</fieldset>	   	
+		<label class="checkbox"><input type = "checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+				<!--caixa de check -->
+			<input type = "submit" value = "Enviar formulário" class="enviar">			<!--botão p/ enviar formulário-->
+		</form>
+
+		<table>		<!--tag de tabela-->
+		    <thead>		<!--cabeçalho da tabela-->
+		        <tr> 		<!--colunas-->
+		            <th>Dia</th>  <!--célula de cabeçalho-->
+		            <th>Horário</th>		            
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>			<!--linha da tabela-->
+		            <td>Segunda à Sexta</td>
+		            <td>8h ~ 18h</td>
+		        </tr>
+		        <tr>
+		            <td>Sábado</td>
+		            <td>8h ~ 12h</td>
+		        </tr>		       
+		    </tbody>
+		</table>
+		 <section class="mapa">      
+          <h6 id="mapa2">Como chegar à Vila Belmiro</h6>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4336.168197647025!2d-46.340789504731916!3d-23.950951128059966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce0368d089229b%3A0xae243f28a776ae4d!2sEst%C3%A1dio%20Urbano%20Caldeira!5e0!3m2!1spt-BR!2sbr!4v1595374826597!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>     
+        </section>
+  </main>
+	 <footer>	  		<!--rodapé da página-->
+	  		<p class = "rodape">Santos Futebol Clube | Todos os direitos reservados © Copyright 2020 | Termos de Uso</p>  	
+	  </footer>
+
+ </body>	
+</html>

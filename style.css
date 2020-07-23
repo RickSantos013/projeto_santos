@@ -1,0 +1,244 @@
+		/* CSS da página "Produto"*/
+header{
+	background: url("back.jpg");	
+}
+#logo{
+	width: 7%;	 	
+}
+#logo:hover{
+	cursor: pointer;
+}
+.caixa{		
+	padding-top: 15px;
+ 	padding-left: 30px; 
+ 	padding-bottom: 15px;
+ }
+.produtos {	
+	width: 1080px;
+	margin:0 auto;	
+	padding: 50px 0;		
+}
+.produtos li{
+	display: inline-block;
+	width: 30%;
+	text-align: center;		
+	margin: 0 1.5px;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	border: 2px solid black;	
+	border-radius: 15px;
+}
+.produtos li:hover{
+	border-color: #C78C19;
+	cursor: pointer;
+}
+.produtos li:active{
+	border-color: #088C19;
+}
+.produtos li:hover h2{
+	font-size: 30px;
+}
+.produtos h2{
+	font-size: 25px;		
+}
+.preço{
+	font-size: 22px;
+	font-style: italic;
+	margin-top: 10px;
+}
+.descrição{
+	font-size: 18px;
+	font-style: italic;	
+}
+#uniforme1{
+	width: 73%;
+	margin-top: 10px;
+}
+#uniforme2{
+	width: 73%;
+	margin-top: 10px;
+}
+#goleiro{
+	width: 73%;	
+	margin-top: 10px;	
+}
+nav {
+	position: absolute;
+	top: 60px;
+	right: 20px;
+}
+nav li{
+	display: inline-block;
+	margin: 0 0 0 15px;
+}
+nav a{
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold; 
+	font-size: 15px;
+	text-decoration: none;	
+}
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+.rodape{
+	color: white;
+	padding-top:10px;
+	padding-bottom: 15px;
+}
+footer{
+	text-align: center;
+	background: url("back.jpg");	
+}
+
+		/* CSS da página "Contato"*/
+main{
+	width: 940px; 
+	margin: 0 auto; 
+}
+
+form{
+	margin: 40px 0;
+}
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;		
+}
+#teste{
+	padding-top: 10px;
+	font-style: italic;	
+}
+.padrao1:before{
+	padding-right: 5px;
+	content: '✉';
+}
+.padrao2:before{
+	padding-right: 5px;
+	content: '📱';
+}
+.padrao3:before{
+	padding-right: 5px;
+	content: '✎';
+}
+.input-padrao{
+	display: block;
+	margin:0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+.checkbox{
+	margin: 20px 0;
+}
+.enviar{
+	width: 40%;
+	padding:15px 0;
+	background: black;
+	color: white;
+	font-size: 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.enviar:hover{
+	background: darkorange;
+	transform: scale(1.1);
+}
+table {
+    margin: 20px 0 40px;
+}
+thead {
+    background: darkorange;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+.mapa{
+	margin-bottom: 20px;
+	display: block;
+}
+#mapa2{	
+	display: block;
+	text-align: center;
+	margin-top: 70px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	font-size: 25px;	
+	text-decoration: underline;
+}
+
+	/* CSS da página "Home"*/
+body{
+	background: linear-gradient(#FFFFFF, #888888);
+	}
+#titulo-principal{	
+	margin-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 25px;
+	text-decoration: underline;
+}	
+#corpo{
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+#sublinhado2{
+	text-decoration: underline;
+	font-style: italic;
+}
+#sub2{
+	text-align: center;
+	font-size: 25px;
+	text-decoration: underline;
+	margin-top: 70px;
+	padding-bottom: 35px;	
+}
+ul{
+	display: inline-block;
+	vertical-align: top;
+}
+.itens{
+	font-size: 18px;
+	text-align: left;
+	padding-bottom: 20px;
+	margin-bottom: 5px;
+	padding-right: 15px;
+}
+.itens:before{		/* CSS para um item específico da lista*/
+	content: '🏆';
+}
+.memorial{
+	display: inline-block;
+	height: 375px;
+	width: 58%;
+	padding-left: 10px;
+	box-shadow: 15px 15px 10px #000000;
+	border-radius: 30px;
+}
+#vila{
+	margin-top: 70px;
+	text-align: left;
+	font-size: 25px;
+	text-decoration: underline;
+	padding:25px;
+}
+.estadio{
+	display: inline-block;
+}		
+#vila2{
+	width: 100%;
+	height: 500px;	
+	margin-bottom: 20px;
+	border-radius: 50px;
+}
+
+@media screen and (max-width: 480px){
+	.caixa {
+		width: auto;
+	}
+}
