@@ -92,12 +92,6 @@ footer{
 	background: url("back.jpg");	
 }
 
-		/* CSS da página "Contato"*/
-main{
-	width: 940px; 
-	margin: 0 auto; 
-}
-
 form{
 	margin: 40px 0;
 }
@@ -238,7 +232,16 @@ ul{
 }
 
 @media screen and (max-width: 480px){
-	.caixa {
+	.caixa, .principal, .titulos, .produtos, .mapa, .mapa2 {
 		width: auto;
+	}
+	h1 {
+		text-align: center;
+	}
+	nav {
+		position:static;
+	}
+	.lista-titulos, .estadio, .memorial {
+		width: 100%
 	}
 }
